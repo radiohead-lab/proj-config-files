@@ -3,5 +3,5 @@
 
 | Projects | Description |
 | --- | --- |
-| `omadactrl` | TP-Link Omada Controller Docker Compose template |
-| `pharosctrl` | TP-Link Pharos Controller Docker Compose template |
+| `omada` | TP-Link Omada Controller Docker |
+| `pharos` | TP-Link Pharos Controller Docker |
