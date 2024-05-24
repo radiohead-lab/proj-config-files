@@ -16,7 +16,7 @@ services:
           - pharos-config:/app/config
         labels:
           - "diun.enable=true"
-          - "docker-volume-backup.stop-during-backup=pharos-config"
+          - "docker-volume-backup.stop-during-backup=pharosctrl-svc"
         restart: always
 
 volumes:
