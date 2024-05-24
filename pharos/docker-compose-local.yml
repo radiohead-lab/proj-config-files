@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+    pharos-control:
+        container_name: pharos-control
+        image: localhost/docker-pharos-control
+        ulimits:
+          nofile:
+            soft: 4096
+            hard: 8192
+        stop_grace_period: 60s
+        network_mode: host
+        ports:
+          - 9321:9321
+        volumes:
+          - pharos-config:/app/config
+        labels:
+          - "diun.enable=true"
+          - "docker-volume-backup.stop-during-backup=pharos-config"
+        restart: always
+
+volumes:
+    pharos-config:
