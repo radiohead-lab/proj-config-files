@@ -35,7 +35,7 @@ services:
       - omada-logs:/opt/tplink/EAPController/logs
     labels:
       - "diun.enable=true"
-      - "docker-volume-backup.stop-during-backup=omada-data"
+      - "docker-volume-backup.stop-during-backup=omadactrl-svc"
     restart: always
 
 volumes:
