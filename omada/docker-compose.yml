@@ -40,4 +40,14 @@ services:
 
 volumes:
   omada-data:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '/opt/tplink/EAPController/data'
   omada-logs:
+    driver: local
+    driver_opts:
+      type: 'none'
+      o: 'bind'
+      device: '/opt/tplink/EAPController/logs'

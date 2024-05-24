@@ -23,3 +23,8 @@ services:
 
 volumes:
     pharos-config:
+      driver: local
+      driver_opts:
+        type: 'none'
+        o: 'bind'
+        device: '/opt/tplink/PharosCtrl/config'
